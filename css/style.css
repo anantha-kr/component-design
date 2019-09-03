@@ -2,40 +2,61 @@ body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.2em;
   /* src https://www.colorzilla.com/gradient-editor/ */
-  background: linear-gradient(to bottom, #3498db 50%,#dddddd 50%);
+  /*https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats*/
+  background: linear-gradient(to bottom, #3498db 50%,#dddddd 50%) fixed;
+  background-repeat: no-repeat;
+ /* box-sizing: border-box;
+  justify-content: center;
+  align-items: center;*/
+  /* height: 100%;*/
 
 }
 
+.container-bg {
+/*display: flex;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+width: 80%;
+height: 10%;*/
+}
+
 .container-card {
-  /*background: linear-gradient(to bottom, #3498db 50%,#ffffff 50%);*/
+  background: white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+/*  justify-content: center;
+  align-items: center;*/
+  width: 80%;
 
 }
 
 .price-card {
   text-transform: uppercase;
   color: #3498db;
+  /*box-sizing: border-box;*/ 
+ /* justify-content: center;
+  align-items: center;*/
+
 }
 
-.price-card-head {
+.price-card-head h1{
   color: #7f8c8d;
-  border-radius: 50%;
+  /*justify-content: center;*/
 }
 
-.price-card-img {
-border-radius: 50%
+.price-card-img img {
+border-radius: 50%;
+/*justify-content: center;*/
 }
-
-.container-card {
-  background: white;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-}
-
+/*
 .price-card-body {
   border-top: 1px solid #e1f1ff;
+  /*border-image-width: 50%;
 }
 
-.price-card-price {
-  border-top: 1px solid #e1f1ff;
-}
+.price-card-price h1 {
+ border-top: 1px solid #e1f1ff;
+ justify-content: center;
+}*/
